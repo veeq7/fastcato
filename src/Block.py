@@ -2,15 +2,13 @@ import copy
 from enum import Enum
 
 import Camera
-import GameInfo
+import src.GameInfo as GameInfo
 import Screen
 from Screen import *
-
 
 class BlockType(Enum):
     GRASS = 1
     GRASS_BACKGROUND = 2
-
 
 class Block(pygame.sprite.Sprite):
     allBlocks = []

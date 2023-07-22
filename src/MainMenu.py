@@ -3,7 +3,7 @@ from enum import Enum
 
 import CloudManager
 import Game
-import GameInfo
+import src.GameInfo as GameInfo
 import LevelManager
 import Music
 import Screen

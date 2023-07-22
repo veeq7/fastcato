@@ -8,7 +8,6 @@ from HUD import Deadline
 from InnerTimer import InnerTime
 from Screen import screen
 
-
 class CatSmall:
     ANIMATION_LAY_LEFT = []
     ANIMATION_WALK_LEFT = []

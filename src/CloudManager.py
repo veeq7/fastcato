@@ -2,7 +2,6 @@ from random import randrange
 
 from Cloud import Cloud
 
-
 class CloudManager:
     _allClouds = []
     _numberOfClouds = 5

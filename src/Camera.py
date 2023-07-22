@@ -1,6 +1,5 @@
 from InnerTimer import InnerTime
 
-
 class Camera:
     borderLeft = 50
     borderRight = 1000

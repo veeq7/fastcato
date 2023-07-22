@@ -5,7 +5,6 @@ import Camera
 from InnerTimer import InnerTime
 from Screen import screen
 
-
 class Cloud:
     IMAGES = []
     _NUMBER_OF_IMAGES = 6

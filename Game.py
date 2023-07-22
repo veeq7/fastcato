@@ -1,37 +1,35 @@
-import Screen
 import pygame
+import asyncio
 
-import EventHandler
-from CatSmall import CatSmall
-from Credits import Credits
-from Icons import Icons
-from CloudManager import CloudManager
-from Bird import Bird
-from Block import Block
-from Camera import Camera
-from Decorations import Decorations
-from GameInfo import GameInfo
-from GameInfo import BuildType
-from HUD.BirdCounter import BirdCounter
-from HUD.Deadline import Deadline
-from InGameMenu import InGameMenu
-from InnerTimer import InnerTime
-from LevelManager import LevelManager
-from MainMenu import MainMenu
-from Music import Music
-from Obstacles.ObstacleManager import ObstacleManager
-from Player import Player
-from Result import Result
-from Screen import screenRender, screenInitialize
-from Background import Background
-
+import src.EventHandler as EventHandler
+from src.CatSmall import CatSmall
+from src.Credits import Credits
+from src.Icons import Icons
+from src.CloudManager import CloudManager
+from src.Bird import Bird
+from src.Block import Block
+from src.Camera import Camera
+from src.Decorations import Decorations
+from src.GameInfo import GameInfo
+from src.HUD.BirdCounter import BirdCounter
+from src.HUD.Deadline import Deadline
+from src.InGameMenu import InGameMenu
+from src.InnerTimer import InnerTime
+from src.LevelManager import LevelManager
+from src.MainMenu import MainMenu
+from src.Music import Music
+from src.Obstacles.ObstacleManager import ObstacleManager
+from src.Player import Player
+from src.Result import Result
+from src.Screen import screenRender, screenInitialize
+from src.Background import Background
 
 class Game:
     isRunning = True
     keyPressed = None
 
     def __init__(self):
-        self._maxFps = 100
+        self._maxFps = 120
         self._clock = pygame.time.Clock()
         GameInfo.load()
         Music.start()
@@ -92,3 +90,15 @@ class Game:
 
     def exit(self):
         pygame.quit()
+
+async def main():
+    game = Game()
+    while Game.isRunning:
+        game.update()
+        game.render()
+        await asyncio.sleep(0)
+        game.delay()
+
+    game.exit()
+
+asyncio.run(main())

@@ -4,7 +4,7 @@ import pygame.mixer
 
 import Bird
 import Block
-import GameInfo
+import src.GameInfo as GameInfo
 import LevelManager
 import Camera
 import MainMenu
@@ -13,7 +13,6 @@ from Obstacles import ObstacleManager
 from Screen import *
 from InnerTimer import *
 from threading import Timer
-
 
 class Player(pygame.sprite.Sprite):
     _instance = None
@@ -481,7 +480,7 @@ class Player(pygame.sprite.Sprite):
                 self.animationStage = 2
             elif self.pos[0] < 1200 and self.animationStage <= 3:  # Scare birds and go to small cat
                 self.animationStage = 3
-            elif time < 16.5:                 # MEOW
+            elif time < 16.5:               # MEOW
                 self.animationStage = 4
             elif self.pos[0] > 725:         # Go to the cake
                 self.animationStage = 5

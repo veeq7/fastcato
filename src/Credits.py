@@ -4,7 +4,6 @@ import InGameMenu
 import InnerTimer
 import Screen
 
-
 class Credits:
     _FONT = pygame.font.Font("fonts/timer.ttf", 50)
     _color = (255, 255, 255)

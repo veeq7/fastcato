@@ -6,7 +6,7 @@ import Icons
 import Camera
 import Bird
 import Decorations
-import GameInfo
+import src.GameInfo as GameInfo
 import MainMenu
 import Player
 import Block
@@ -15,7 +15,6 @@ from HUD import BirdCounter, Deadline
 from Obstacles import ObstacleManager
 from Obstacles.Dog import Dog
 from Obstacles.Hedgehog import Hedgehog
-
 
 class LevelManager:
     IMG_LEVELS = []

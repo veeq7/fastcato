@@ -2,10 +2,9 @@ import time
 import pygame
 
 import Bird
-import GameInfo
+import src.GameInfo as GameInfo
 import LevelManager
 import Screen
-
 
 class BirdCounter:
     IMG = pygame.transform.scale(pygame.image.load("images/gui/bird.png"), (35, 33)).convert_alpha()

@@ -9,7 +9,6 @@ import Music
 import Result
 from Music import MUSIC_ENDED
 
-
 def update():
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -32,4 +31,3 @@ def update():
             Icons.Icons.buttonDown(pygame.key.get_pressed())
 
     Game.Game.keyPressed = pygame.key.get_pressed()
-

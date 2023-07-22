@@ -1,11 +1,10 @@
 from enum import Enum
 
-import GameInfo
+import src.GameInfo as GameInfo
 import pygame
 
 import Camera
 from Screen import screen
-
 
 class Decorations:
     class Type(Enum):

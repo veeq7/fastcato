@@ -5,11 +5,10 @@ import pygame
 
 from HUD import BirdCounter
 import Camera
-import GameInfo
+import src.GameInfo as GameInfo
 import Player
 from InnerTimer import InnerTime
 from Screen import screen
-
 
 class Bird(pygame.sprite.Sprite):
     allBirds = []

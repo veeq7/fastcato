@@ -1,7 +1,7 @@
 from random import randrange
 import pygame
 
-import GameInfo
+import src.GameInfo as GameInfo
 
 MUSIC_ENDED = pygame.USEREVENT + 1
 

@@ -1,12 +1,11 @@
 from enum import Enum
 import pygame
 
-import GameInfo
+import src.GameInfo as GameInfo
 import LevelManager
 import Result
 import Screen
 import MainMenu
-
 
 class InGameMenu:
     class State(Enum):

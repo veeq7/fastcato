@@ -1,10 +1,9 @@
 import time
 import pygame
 
-import GameInfo
+import src.GameInfo as GameInfo
 import LevelManager
 import Screen
-
 
 class Deadline:
     _startTime = time.time()

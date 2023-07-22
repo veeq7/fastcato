@@ -1,10 +1,9 @@
 import pygame
 
 import Camera
-import GameInfo
+import src.GameInfo as GameInfo
 from CloudManager import CloudManager
 from Screen import screen
-
 
 class Background:
     _instance = None

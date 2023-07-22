@@ -1,6 +1,5 @@
 import datetime
 
-
 class InnerTime:
     _prevTime = None
 
@@ -15,7 +14,6 @@ class InnerTime:
         if InnerTime.deltaTime > 125:
             InnerTime.deltaTime = 0
         InnerTime._prevTime = datetime.datetime.now()
-
 
     _framesThisSecond = 0
     _lastSecond = 0
